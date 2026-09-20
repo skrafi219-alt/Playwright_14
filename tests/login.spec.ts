@@ -6,11 +6,11 @@ import testdata from '../test-data/testdata.json';
 test("loginTest Case", async ({page,loginPage})=>{
 
     await page.goto("https://rahulshettyacademy.com/client");
-    
+
     await loginPage.login(testdata.username,testdata.password);
 
     await expect(page).toHaveTitle("Let's Shop");
 
-    await page.pause();
+   
     
 });
